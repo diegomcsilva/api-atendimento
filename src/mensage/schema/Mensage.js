@@ -1,23 +1,19 @@
 import mongoose from 'mongoose'
 
 const Mensage = new mongoose.Schema({
-    title: {
+    tipoChamada: {
+        type: String,
+        required: true
+    },
+    estado: {
+        type: String,
+        required: true
+    },
+    motivoChamada: {
         type: String,
         required: true
     },
     mensage: {
-        type: String,
-        required: true
-    },
-    email: {
-        type: String,
-        required: true
-    },
-    tel: {
-        type: Number,
-        required: true
-    },
-    name: {
         type: String,
         required: true
     },
